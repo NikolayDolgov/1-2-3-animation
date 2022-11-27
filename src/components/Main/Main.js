@@ -26,6 +26,9 @@ class Main extends React.Component {
   render() {
     return <div className='main'>
       <Card />
+      <Card />
+      <Card />
+      <Card />
       <Container scroll={this.state.scroll} />
       <AnimBlock />
     </div>
