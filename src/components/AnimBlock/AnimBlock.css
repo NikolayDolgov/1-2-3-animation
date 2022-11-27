@@ -1,0 +1,59 @@
+.animblock {
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 400px;
+  width: 100%;
+  background: darkgray;
+  margin: 280px 0 0 ;
+  overflow: hidden;
+}
+
+.animblock__block {
+  position: absolute;
+  left: 0;
+  top: 400px;
+  height: 40px;
+  width: 200px;
+  background: blue;
+  animation-name: transfer;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
+
+.animblock__block_type_red {
+  position: absolute;
+  left: 0;
+  top: 400px;
+  height: 40px;
+  width: 200px;
+  background: red;
+  animation-name: transferTwo;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes transfer {
+  0% {
+      top: 400px;
+  }
+  100% {
+      top: -40px;
+  }
+} 
+
+@keyframes transferTwo {
+  0% {
+      top: 450px;
+  }
+  100% {
+      top: -40px;
+  }
+} 
