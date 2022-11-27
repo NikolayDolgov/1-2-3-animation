@@ -4,7 +4,6 @@
   height: 200px;
   margin: 50px auto;
   cursor: pointer;
-  
 }
 
 .card__front {
@@ -17,7 +16,6 @@
   height: 100%;
   transition: transform 1s linear 0.5s;
   transition-property: transform;
-  box-shadow: 10px 5px 10px grey;
   backface-visibility: hidden
 }
 
@@ -29,41 +27,23 @@
   z-index: 1;
   width: 100%;
   height: 100%;
- background: black;
- transform: rotateY(-180deg);
+  background: black;
+  transform: rotateY(-180deg);
   opacity: 1;
   transition-property: transform;
-  box-shadow: 10px 5px 10px grey;
 }
 
 .card__text {
   background: white;
 }
 
-/*.card:hover .card__front {
-  transform: rotateY(180deg);
-  /*opacity: 0;*/
-/*}
-
-.card:hover .card__back {
-  /*opacity: 1;*/
-/*}**/
-
-
-
 .card:hover .card__front {
-  /*animation: rotation 5s;*/
   transform: rotateY(-180deg);
   transition: transform 1s ;
   animation-delay: 1s;
 }
 
 .card:hover .card__back{
-  /*animation: rotation 5s;*/
-  transform: rotateY(-0deg);
+  transform: rotateY(0deg);
   transition: transform 1s ;
 }
-
-/*.card:hover .rotateBack {*/
-  /*animation: rotationBack 10s ease-in-out;*/
-/*} */
